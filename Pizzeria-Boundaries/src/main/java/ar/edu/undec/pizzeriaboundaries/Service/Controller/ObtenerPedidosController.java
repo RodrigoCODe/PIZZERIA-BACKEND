@@ -23,7 +23,7 @@ public class ObtenerPedidosController {
     }
 
 
-    @RequestMapping(value = "pedidoso", method = RequestMethod.GET)
+    @RequestMapping(value = "pedidos", method = RequestMethod.GET)
     @ResponseBody
     public ResponseEntity<?> obtenerPedidos() {
         try{

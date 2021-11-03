@@ -7,6 +7,7 @@ import excepciones.PedidosNoEncontradosException;
 import input.IObtenerPizzasMasVendidasFechasInput;
 
 import modelo.Pizza;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -28,9 +29,9 @@ public class ObtenerPizzasMasVendidasEntreFechaController {
         this.obtenerPizzasMasVendidasEntreFechasInput = obtenerPizzasMasVendidasEntreFechasInput;
     }
 
-    @RequestMapping(value = "pizza_Integer", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "pizzas_mas_vendidas/{fechaInicio}{fechaFin}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public ResponseEntity<?> obtenerPizzasMasVendidasEntreFechas(@RequestBody LocalDate fechaInicio, @RequestBody LocalDate fechaFin) {
+    public ResponseEntity<?> obtenerPizzasMasVendidasEntreFechas(@RequestParam("fechaInicio") @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate fechaInicio, @RequestParam("fechaFin") @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate fechaFin) {
         try {
             HashMap<Pizza, Integer> lasPizzasMap = this.obtenerPizzasMasVendidasEntreFechasInput.obtenerPizzasMasVendidasEntreFechas(fechaInicio, fechaFin);
 
