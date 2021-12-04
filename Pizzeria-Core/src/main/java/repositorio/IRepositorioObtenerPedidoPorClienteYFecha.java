@@ -9,5 +9,5 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public interface IRepositorioObtenerPedidoPorClienteYFecha {
-    public List<Pedido> obtenerPedidoPorClienteYFecha(Cliente cliente, LocalDateTime fecha) throws PedidoIncompletoException, PizzaIncompletaException;
+   List<Pedido> obtenerPedidoPorClienteYFecha(Cliente cliente, LocalDateTime fecha) throws PedidoIncompletoException, PizzaIncompletaException;
 }

@@ -9,5 +9,5 @@ import java.util.List;
 
 public interface IRepositorioObtenerPedidos {
 
-    public List<Pedido> obtenerPedidos() throws PedidoIncompletoException, PizzaIncompletaException;
+    List<Pedido> obtenerPedidos() throws PedidoIncompletoException, PizzaIncompletaException;
 }

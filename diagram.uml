@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="351.0" y="171.0">modelo.Barrio</node>
+    <node x="0.0" y="171.0">ar.edu.undec.pizzeriaboundaries.Data.ModelosEntity.BarrioEntity</node>
+    <node x="0.0" y="383.0">ar.edu.undec.pizzeriaboundaries.Service.Controller.CrearBarrioController</node>
+    <node x="455.0" y="478.0">ar.edu.undec.pizzeriaboundaries.Data.RepositorioCRUD.ICrearBarrioCRUD</node>
+    <node x="422.5" y="0.0">input.ICrearBarrioInput</node>
+    <node x="0.0" y="478.0">excepciones.BarrioExisteException</node>
+    <node x="196.0" y="549.0">modeloUnitTest.BarrioUnitTest</node>
+    <node x="368.0" y="76.0">interactor.CrearBarrioUseCase</node>
+    <node x="0.0" y="288.0">ar.edu.undec.pizzeriaboundaries.Data.RepositorioImplementacion.ActualizarBarrioRepoImpl</node>
+    <node x="275.0" y="383.0">repositorio.IObtenerBarrioPorNombre</node>
+    <node x="324.0" y="288.0">interactorUnitTest.CrearBarrioUnitTest</node>
+    <node x="178.0" y="171.0">ar.edu.undec.pizzeriaboundaries.Service.ModeloService.BarrioDTO</node>
+    <node x="0.0" y="76.0">interactor.ObtenerBarrioPorNombreUseCase</node>
+    <node x="0.0" y="549.0">ar.edu.undec.pizzeriaboundaries.Service.ServiceMapper.BarrioDTOMapper</node>
+    <node x="238.0" y="478.0">ar.edu.undec.pizzeriaboundaries.Data.EntityMapper.BarrioEntityMapper</node>
+    <node x="40.5" y="0.0">input.IObtenerBarrioPorNombreInput</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="interactor.CrearBarrioUseCase" target="input.ICrearBarrioInput">
+      <point x="0.0" y="-25.0" />
+      <point x="0.0" y="13.0" />
+    </edge>
+    <edge source="interactor.ObtenerBarrioPorNombreUseCase" target="input.IObtenerBarrioPorNombreInput">
+      <point x="0.0" y="-25.0" />
+      <point x="0.0" y="13.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="463.0" y="105.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
